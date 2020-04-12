@@ -2,7 +2,6 @@ import schedule
 import time
 import urllib
 
-
 datasource = 'https://opendata.ecdc.europa.eu/covid19/casedistribution/csv'
 file = 'dataset.csv'
 
