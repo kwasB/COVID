@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 Stat</title>
+</head>
+<body>
+    <div>
+        <h1> Enter country code here: </h1>
+        <form action="/api" name="myform" method="POST">
+            <label iso="fname">Label:</label><br>
+            <input type="text" id="name" name="name" ><br>
+            <input type="submit" value="Submit">
+    </div>
+    <div>
+        <table border>
+            <tr>
+                <th>Date</th>
+                <th>ISO 2</th>
+                <th>ISO 3</th>
+                <th>Cases</th>
+                <th>Deaths</th>
+                <th>Country</th>
+            </tr>
+            {% for value in iso2 %}
+            <tr>
+                <td> {{ value.dateRep }}</td>
+                <td> {{ value.geoId }}</td>
+                <td> {{ value.countryterritoryCode }}</td>
+                <td> {{ value.cases }}</td>
+                <td> {{ value.deaths }}</td>
+                <td> {{ value.countriesAndTerritories }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>
