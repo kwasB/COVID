@@ -10,7 +10,7 @@ Flask-WTF==0.14.2
 force==0.1.4
 idna==2.9
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 joblib==0.13.2
 MarkupSafe==1.1.1
 nltk==3.4.1
