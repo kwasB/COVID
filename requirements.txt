@@ -11,7 +11,7 @@ force==0.1.4
 idna==2.9
 itsdangerous==1.1.0
 Jinja2==2.10
-joblib==0.13.2
+joblib==1.2.0
 MarkupSafe==1.1.1
 nltk==3.4.1
 numpy==1.16.2
